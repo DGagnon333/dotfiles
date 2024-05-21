@@ -21,3 +21,8 @@ fi
 if ! pgrep -x "skhd" > /dev/null; then
     skhd --start-service &
 fi
+
+
+# Open Google Chrome with specific tabs
+~/.scripts/open_chrome_tabs.sh &
+

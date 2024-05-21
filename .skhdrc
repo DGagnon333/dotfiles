@@ -14,7 +14,7 @@ hyper - c: ~/.scripts/open_chrome.sh
 hyper - o: ~/.scripts/focus_or_open.sh "Obsidian" "Obsidian"
 hyper - a : ~/.scripts/focus_or_open.sh "Alacritty" "Alacritty"
 hyper - v : ~/.scripts/focus_or_open.sh "Code" "Visual Studio Code"
-hyper - t : ~/.scripts/focus_or_open.sh "Microsoft Teams (Work or School)" "Microsoft Teams (Work or School)"
+hyper - t : ~/.scripts/focus_or_open.sh "Microsoft Teams" "Microsoft Teams (Work or School)"
 
 # Toggle window float
 hyper - f : yabai -m window --toggle float

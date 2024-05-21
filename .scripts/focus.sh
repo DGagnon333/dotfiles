@@ -21,11 +21,12 @@ first_window_id=$(echo "$window_ids" | head -n 1)
 if [ -n "$first_window_id" ]; then
   echo "Focusing $app_name with window ID $first_window_id" >> $log_file
   yabai -m window --focus "$first_window_id"
+  echo "focus.sh completed successfully" >> $log_file
+  echo "------------------------------" >> $log_file
+  exit 0
 else
   echo "No existing window found for $app_name" >> $log_file
+  echo "focus.sh completed with errors" >> $log_file
+  echo "------------------------------" >> $log_file
+  exit 1
 fi
-
-# Final log entry
-echo "focus.sh completed" >> $log_file
-echo "------------------------------" >> $log_file
-
