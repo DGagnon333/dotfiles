@@ -13,7 +13,9 @@ hyper - k: yabai -m window --resize top:0:-20; yabai -m window --resize bottom:0
 hyper - c: ~/.scripts/open_chrome.sh 
 hyper - o: ~/.scripts/focus_or_open.sh "Obsidian" "Obsidian"
 hyper - a : ~/.scripts/focus_or_open.sh "Alacritty" "Alacritty"
-hyper - v : ~/.scripts/focus_or_open.sh "Visual Studio Code" "Visual Studio Code"
+hyper - v : ~/.scripts/focus_or_open.sh "Code" "Visual Studio Code"
+hyper - t : ~/.scripts/focus_or_open.sh "Microsoft Teams (Work or School)" "Microsoft Teams (Work or School)"
+
 # Toggle window float
 hyper - f : yabai -m window --toggle float
 
