@@ -12,3 +12,13 @@ export PATH="$PATH:/Users/derickgagnon/Library/Application Support/JetBrains/Too
 # .NET Core SDK tools
 export PATH="$PATH:/Users/derickgagnon/.dotnet/tools"
 
+# Start Yabai
+if ! pgrep -x "yabai" > /dev/null; then
+    yabai &
+fi
+
+# Start Skhd (if required)
+if ! pgrep -x "skhd" > /dev/null; then
+    skhd &
+fi
+
