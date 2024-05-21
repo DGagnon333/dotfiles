@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+yabai -m config border on
+yabai -m config window_gap 5
+yabai -m config top_padding 30
+yabai -m config bottom_padding 10
+yabai -m config left_padding 10
+yabai -m config right_padding 10
+
+# Define spaces
+yabai -m space 1 --label "dev"
+yabai -m space 2 --label "web"
+yabai -m space 3 --label "media"
+
+# Start applications in specific spaces
+yabai -m rule --add app="Alacritty" space=1
+yabai -m rule --add app="Google Chrome" space=2
+yabai -m rule --add app="Spotify" space=3
+

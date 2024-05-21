@@ -81,3 +81,16 @@ alias c='clear'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+# Start Yabai
+if ! pgrep -x "yabai" > /dev/null
+then
+    yabai &
+fi
+
+# Start Skhd
+if ! pgrep -x "skhd" > /dev/null
+then
+    skhd &
+fi
+
