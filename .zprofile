@@ -14,11 +14,10 @@ export PATH="$PATH:/Users/derickgagnon/.dotnet/tools"
 
 # Start Yabai
 if ! pgrep -x "yabai" > /dev/null; then
-    yabai &
+    yabai --restart-service &
 fi
 
-# Start Skhd (if required)
+# Start Skhd
 if ! pgrep -x "skhd" > /dev/null; then
-    skhd &
+    skhd --restart-service &
 fi
-

@@ -9,10 +9,9 @@ hyper - j: yabai -m window --resize bottom:0:20; yabai -m window --resize top:0:
 hyper - k: yabai -m window --resize top:0:-20; yabai -m window --resize bottom:0:-20
 
 # Launch Alacritty with a specific keybinding
-hyper - return : /usr/bin/open -na "Alacritty"
-
-
-
+hyper - c: open -na "Google Chrome"
+hyper - o: open -na "Obsidian"
+hyper - return : open -na "Alacritty"
 # Toggle window float
 hyper - f : yabai -m window --toggle float
 
@@ -30,9 +29,6 @@ hyper - q : yabai -m space --equalize
 
 # Close window
 hyper - c : yabai -m window --close
-
-# Launch Alacritty with a specific keybinding
-hyper - return : /usr/bin/open -na "Alacritty"
 
 # Restart Yabai (duplicated for hyper)
 hyper - r : brew services restart yabai
