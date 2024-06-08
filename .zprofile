@@ -24,5 +24,5 @@ fi
 
 
 # Open Google Chrome with specific tabs
-~/.scripts/open_chrome_tabs.sh &
+~/.scripts/open_chrome.sh &
 

@@ -31,7 +31,7 @@ open_chrome_with_tabs() {
 }
 
 # Call the focus script for Google Chrome
-~/dotfiles/.scripts/focus.sh "Google Chrome"
+~/dotfiles/.scripts/focus.sh "Google Chrome" &
 focus_result=$?
 
 # If Chrome is not focused, open with specified profile and tabs
