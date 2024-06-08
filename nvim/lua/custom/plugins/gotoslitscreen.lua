@@ -1,6 +1,4 @@
-local M = {}
-
-function M.setup()
+return {
   -- Common function to open the first definition with a given split command
   local function go_to_definition(split_cmd)
     local params = vim.lsp.util.make_position_params()
@@ -32,6 +30,4 @@ function M.setup()
 
   -- Key mapping for vertical split and go to definition
   vim.api.nvim_set_keymap('n', 'gv', ':lua go_to_definition_vsplit()<CR>', { noremap = true, silent = true })
-end
-
-return M
+}
